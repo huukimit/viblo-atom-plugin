@@ -62,7 +62,7 @@
 .viblo-atom-plugin {
   &.settings-view {
     .section-container {
-      max-width: 50em;
+      max-width: 60em;
     }
     .about-panel {
       max-width: 100%;
@@ -278,6 +278,27 @@
     .icon:before {
       font-size: 18px;
       vertical-align: sub;
+    }
+  }
+}
+
+.post-meta {
+  display: flex;
+  .post-meta__link {
+    margin-right: 1rem;
+    color: #9da5b4;
+  }
+}
+
+.meta-status {
+  display: flex;
+  .meta-status__item {
+    font-size: 1.2rem;
+    i:before {
+      margin-right: 0.5rem;
+    }
+    + .meta-status__item {
+      margin-left: 2rem;
     }
   }
 }
