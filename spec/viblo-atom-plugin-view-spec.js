@@ -1,9 +1,9 @@
-'use babel';
+'use babel'
 
-import VibloAtomView from '../lib/viblo-atom-plugin-view';
+import VibloAtomView from '../lib/viblo-atom-plugin-view'
 
 describe('VibloAtomView', () => {
-  it('has one valid test', () => {
-    expect('life').toBe('easy');
-  });
-});
+    it('has one valid test', () => {
+        expect('life').toBe('easy')
+    })
+})

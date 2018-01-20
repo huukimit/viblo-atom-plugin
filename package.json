@@ -1,6 +1,6 @@
 {
   "name": "viblo",
-  "main": "./lib/main",
+  "main": "./lib/index.js",
   "version": "0.4.5",
   "description": "Plug-in to integrate with Viblo - Free service for technical knowledge sharing",
   "keywords": [
@@ -23,17 +23,23 @@
   },
   "homepage": "https://github.com/framgia/viblo-atom-plugin#readme",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint . --fix"
   },
   "author": "amelkikh",
   "dependencies": {
     "atom-space-pen-views": "^2.2.0",
     "etch": "^0.12.7",
     "fs-plus": "^3.0.1",
-    "lodash": "^4.17.4"
+    "lodash": "^4.17.4",
+    "moment": "^2.20.1",
+    "viblo-sdk": "https://github.com/viblo-asia/sdk-js#8b8e8726d7f6177e46b3bd24f690505865476878"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "eslint": "^4.15.0",
+    "eslint-plugin-async-await": "^0.0.0"
+  },
   "deserializers": {
-    "VibloView": "createVibloPluginView"
+    "App": "createAppInstance"
   }
 }
