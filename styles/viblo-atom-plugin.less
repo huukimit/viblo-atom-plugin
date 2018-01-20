@@ -288,17 +288,50 @@
     margin-right: 1rem;
     color: #9da5b4;
   }
-}
 
-.meta-status {
-  display: flex;
-  .meta-status__item {
-    font-size: 1.2rem;
-    i:before {
-      margin-right: 0.5rem;
-    }
-    + .meta-status__item {
-      margin-left: 2rem;
+  .meta-status {
+    display: flex;
+    .meta-status__item {
+      font-size: 1.2rem;
+      i:before {
+        margin-right: 0.5rem;
+      }
+      + .meta-status__item {
+        margin-left: 2rem;
+      }
     }
   }
+
+  .points {
+    display: flex;
+    font-size: 1.2rem;
+    color: #9da5b4;
+    justify-content: center;
+    align-items: center;
+    .carets {
+      display: inline-flex;
+      flex-direction: column;
+      font-size: 1.2rem;
+      margin-right: 0.5rem;
+      margin-left: 0.5rem;
+      max-height: 1rem;
+      .fa {
+        position: relative;
+      }
+      .fa-caret-up {
+        top: -0.4rem;
+      }
+      .fa-caret-down {
+        top: -0.9rem;
+      }
+    }
+  }
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.draft-icon {
+  margin-right: 1rem;
 }
