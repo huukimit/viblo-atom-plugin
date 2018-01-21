@@ -1,25 +1,25 @@
 {
   "context-menu": {
-      "atom-workspace atom-text-editor[data-grammar*=\"gfm\"]": [
-        {
-          "label": "Publish to Viblo",
-          "command": "viblo-view:toggle"
-        },
-        {
-          "label": "Viblo Preview",
-          "command": "viblo-view:toggle-preview"
-        },
-        {
-          "label": "Viblo Image Helper",
-          "command": "viblo-view:image-helper"
-        }
-      ],
-      ".markdown-preview" : [
-        {
-          "label": "Publish to Viblo",
-          "command": "viblo-view:toggle"
-        }
-      ]
+    "atom-workspace atom-text-editor[data-grammar*=\"gfm\"]": [
+      {
+        "label": "Save to Viblo",
+        "command": "viblo:save"
+      },
+      {
+        "label": "Viblo toggle preview",
+        "command": "viblo:toggle-preview"
+      },
+      {
+        "label": "Viblo image helper",
+        "command": "viblo:image-helper"
+      }
+    ],
+    ".markdown-preview": [
+      {
+        "label": "Publish to Viblo",
+        "command": "viblo:publish"
+      }
+    ]
   },
   "menu": [
     {
@@ -40,7 +40,6 @@
               "label": "About",
               "command": "viblo:about"
             }
-
           ]
         }
       ]
