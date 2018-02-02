@@ -16,8 +16,8 @@
     ],
     ".markdown-preview": [
       {
-        "label": "Publish to Viblo",
-        "command": "viblo:publish"
+        "label": "Save to Viblo",
+        "command": "viblo:save"
       }
     ]
   },
