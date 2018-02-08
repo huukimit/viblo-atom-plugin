@@ -41,6 +41,7 @@
     "eslint-plugin-async-await": "^0.0.0"
   },
   "deserializers": {
-    "App": "createAppInstance"
+    "App": "createAppInstance",
+    "VibloMarkdownPreviewPane": "createVibloMarkdownPreviewPane"
   }
 }
